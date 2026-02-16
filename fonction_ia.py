@@ -16,9 +16,7 @@ def function_ia(message: str):
                 {"role": "user", "content": message},
             ],
         )
-        return {
-            "response": response.choices[0].message.content,
-            "model": response.model,
-        }
+        return response.choices[0].message.content
+
     except Exception as e:
         return {"error": str(e)}
