@@ -1,0 +1,14 @@
+- Créer une nouvelle route (= endpoint)
+/ia-premier/{nombre}
+
+- tester avec la navigateur
+
+- créer une fonction: fonction_appel_ia
+param : question
+retour : reponse
+
+- appeler dans le endpoint (num_pre)
+
+- récupérer le retour de la fonction
+
+- et renvoyer la réponse au client
