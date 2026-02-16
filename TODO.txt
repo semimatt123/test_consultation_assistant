@@ -1,7 +1,7 @@
 - Créer une nouvelle route (= endpoint)
 /ia-premier/{nombre}
 
-- tester avec la navigateur
+- tester avec le navigateur
 
 - créer une fonction: fonction_appel_ia
 param : question
