@@ -3,6 +3,7 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
+from fonction_ia import function_ia
 from script import num_pre
 from script2 import fonction_appel_ia
 
@@ -46,7 +47,7 @@ def read_user(user_id: int):
 
 @app.get("/ai_premier/{nombre}")
 def nombre_(nombre: int):
-    response2= fonction_appel_ia(nombre)
+    response2= function_ia(f"Est-ce que {nombre} est premier ? ")
     return {"nombre": response2}
 
 
