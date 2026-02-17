@@ -2,12 +2,19 @@
 
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-
+from fastapi.middleware.cors import CORSMiddleware
 from fonction_ia import function_ia
 from script import num_pre
-from script2 import fonction_appel_ia
+from script2 import fonction_appel_ia, ordi_premier
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 response = """
 <html>
@@ -15,7 +22,7 @@ response = """
 <style>
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 200px;
 }
 h2 {
     text-align: center;
@@ -36,7 +43,7 @@ img {
 </html>
 """
 
-@app.get("/", response_class=HTMLResponse)
+#@app.get("/", response_class=HTMLResponse)
 def read_root():
     return response
 
@@ -45,9 +52,16 @@ def read_user(user_id: int):
     response = num_pre(user_id)
     return {"user_id": response}
 
+
+
 @app.get("/ai_premier/{nombre}")
 def nombre_(nombre: int):
     response2= function_ia(f"Est-ce que {nombre} est premier ? ")
+    return {"nombre": response2}
+
+@app.get("/ordi_premier/{nombre}")
+def nombre_ordi(nombre: int):
+    response2= ordi_premier(nombre)
     return {"nombre": response2}
 
 

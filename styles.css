@@ -1,0 +1,106 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Titre principal */
+h1 {
+    color: #4a5fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Paragraphe d'introduction */
+p {
+    font-size: 18px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Boîte de vérification */
+.verification-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.verification-box h2 {
+    color: #4a5fff;
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    padding: 12px;
+    font-size: 20px;
+    border: 2px solid #4a5fff;
+    border-radius: 8px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3a4fee;
+    box-shadow: 0 0 5px rgba(74, 95, 255, 0.3);
+}
+
+/* Bouton */
+button {
+    padding: 12px 30px;
+    font-size: 20px;
+    background-color: #4a5fff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #3a4fee;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Zone de résultat */
+#resultat {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 30px;
+}
+
+.prime {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.not-prime {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.loading {
+    color: #856404;
+}
