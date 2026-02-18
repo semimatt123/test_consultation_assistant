@@ -1,23 +1,4 @@
-L’objectif de ce projet est de fournir une interface (CLI + web simple) permettant :  
-- d’interagir avec une IA pour vérifier un nombre et voir s'il est premier,
-- d’apprendre à intégrer des modèles d’IA dans une application full-stack.
-
-| Dossier / Fichier         | Description                                      |
-|---------------------------|--------------------------------------------------|
-| `main.py`                 | Point d’entrée principal de l’application Python |
-| `client.py`               | Logique client pour la communication IA          |
-| `fonction_ia.py`          | Fonctions utilitaires liées à l’IA               |
-| `index.html`              | Interface web minimale                           |
-| `script.js`               | Logique front-end                                |
-| `styles.css`              | Styles pour l’interface web                      |
-| `script.py`, `script2.py` | Scripts Python divers                            |
-| `TODO.txt`                | Liste de tâches à réaliser                       |
-| `.gitignore`              | Fichiers exclus du suivi Git                     |
-| `.idea/`, `__pycache__/`  | Fichiers locaux / compilés                       |
-
-
-
-
+Explication de ce projet 
 
 # 📌 Test Consultation Assistant
 
@@ -27,24 +8,24 @@ Ce dépôt contient une application d’assistant de consultation basée sur une
 ## 🚀 Objectif
 
 L’objectif de ce projet est de fournir une interface (CLI + web simple) permettant :  
-- d’interagir avec une IA pour répondre à des questions ou simuler une consultation,
+- d’interagir avec une IA pour vérifier si un nombre est premier,
 - d’expérimenter avec des fonctions IA personnalisées,
-- d’apprendre à intégrer des modèles d’IA dans une application full-stack.
+
 
 ## 🗂️ Structure du projet
 
-| Dossier / Fichier      | Description |
-|------------------------|-------------|
-| `main.py`              | Point d’entrée principal de l’application Python |
-| `client.py`            | Logique client pour la communication IA |
-| `fonction_ia.py`       | Fonctions utilitaires liées à l’IA |
-| `index.html`           | Interface web minimale |
-| `script.js`            | Logique front-end |
-| `styles.css`           | Styles pour l’interface web |
-| `script.py`, `script2.py` | Scripts Python divers |
-| `TODO.txt`             | Liste de tâches à réaliser |
-| `.gitignore`           | Fichiers exclus du suivi Git |
-| `.idea/`, `__pycache__/` | Fichiers locaux / compilés |
+| Dossier / Fichier          | Description                                      |
+|----------------------------|--------------------------------------------------|
+| `main.py`                  | Point d’entrée principal de l’application Python |
+| `client.py`                | Logique client pour la communication IA          |
+| `fonction_ia.py`           | Fonctions utilitaires liées à l’IA               |
+| `index.html`               | Interface web minimale                           |
+| `script.js`                | Logique front-end                                |
+| `styles.css`               | Styles pour l’interface web                      |
+| `script.py`, `script2.py`  | Scripts Python divers                            |
+| `TODO.txt`                 | Liste de tâches à réaliser                       |
+| `.gitignore`               | Fichiers exclus du suivi Git                     |
+| `.idea/`, `__pycache__/`   | Fichiers locaux / compilés                       |
 
 ## ⚙️ Installation
 
