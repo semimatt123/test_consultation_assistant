@@ -5,7 +5,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fonction_ia import function_ia
 from script import num_pre
-from script2 import fonction_appel_ia, ordi_premier
+from script2 import fonction_appel_ia, ordi_premier, ordi_premier2
 
 app = FastAPI()
 
@@ -59,10 +59,10 @@ def nombre_(nombre: int):
     response2= function_ia(f"Est-ce que {nombre} est premier ? ")
     return {"nombre": response2}
 
-@app.get("/ordi_premier/{nombre}")
+@app.get("/ordi_premier2/{nombre}")
 def nombre_ordi(nombre: int):
-    response2= ordi_premier(nombre)
-    return {"nombre": response2}
+    response3= ordi_premier2(nombre)
+    return {"nombre": response3}
 
 
 

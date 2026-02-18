@@ -37,7 +37,7 @@ async function verifierNombre() {
 
     } catch (erreur) {
         console.error('Erreur lors de l\'appel API:', erreur);
-        resultatDiv.innerText = '❌ Erreur : Vérifie que ton API FastAPI est bien lancée !';
+        resultatDiv.innerText = 'Erreur : Vérifie que ton API FastAPI est bien lancée !';
         resultatDiv.className = 'not-prime';
     }
 
@@ -55,5 +55,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    console.log('✅ Page chargée, prêt à tester !');
+    console.log('Page chargée, prêt à tester !');
 });
