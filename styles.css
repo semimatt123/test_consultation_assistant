@@ -1,7 +1,7 @@
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4ff;
+    background-color: #E4FFDF;
     color: #333;
     text-align: center;
     padding: 20px;
@@ -103,4 +103,75 @@ button:disabled {
 
 .loading {
     color: #856404;
+}
+
+.toggle-container {
+    margin-bottom: 25px;
+}
+
+.toggle-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+}
+
+/* Cacher la vraie checkbox */
+.toggle-label input[type="checkbox"] {
+    display: none;
+}
+
+/* Le switch visuel */
+.toggle-switch {
+    width: 50px;
+    height: 26px;
+    background-color: #ccc;
+    border-radius: 13px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+/* Le rond du switch */
+.toggle-switch::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.1s;
+}
+
+/* Quand le toggle est activé (IA) */
+.toggle-label input:checked + .toggle-switch {
+    background-color: #4a5fff;
+}
+
+.toggle-label input:checked + .toggle-switch::after {
+    transform: translateX(24px);
+}
+
+/* Texte du toggle */
+.toggle-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Container pour l'input et le bouton */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Indicateur du mode utilisé */
+#modeUtilise {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
 }

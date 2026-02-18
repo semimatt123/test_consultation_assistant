@@ -13,10 +13,24 @@
     <p>Un nombre premier est un nombre qui n'est divisible que par 1 et par lui-même.</p>
 
     <div class="verification-box">
-        <h2>Teste un nombre avec l'IA :</h2>
-        <input type="number" id="monInput" placeholder="Entre un nombre">
-        <button onclick="verifierNombre()" id="boutonVerifier">Vérifier</button>
+        <h2>Teste un nombre :</h2>
+
+        <div class="toggle-container">
+            <label class="toggle-label">
+                <input type="checkbox" id="useAI" checked>
+                <span class="toggle-switch"></span>
+                <span class="toggle-text" id="toggleText">🤖 Mode IA (OpenAI)</span>
+            </label>
+        </div>
+
+        <div class="input-container">
+            <input type="number" id="monInput" placeholder="Entre un nombre">
+            <button onclick="verifierNombre()" id="boutonVerifier">Vérifier</button>
+        </div>
+
         <div id="resultat"></div>
+
+        <div id="modeUtilise"></div>
     </div>
 
     <!-- Lien vers le fichier JavaScript -->

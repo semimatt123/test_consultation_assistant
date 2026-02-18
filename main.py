@@ -59,10 +59,15 @@ def nombre_(nombre: int):
     response2= function_ia(f"Est-ce que {nombre} est premier ? ")
     return {"nombre": response2}
 
+@app.get("/ordi_premier/{nombre}")
+def nombre_ordi(nombre: int):
+    response3= ordi_premier(nombre)
+    return {"nombre": response3}
+
 @app.get("/ordi_premier2/{nombre}")
 def nombre_ordi(nombre: int):
-    response3= ordi_premier2(nombre)
-    return {"nombre": response3}
+    response4= ordi_premier2(nombre)
+    return {"nombre": response4}
 
 
 
