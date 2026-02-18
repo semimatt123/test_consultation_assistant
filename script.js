@@ -12,7 +12,7 @@ async function verifierNombre() {
     }
 
     // Afficher un message de chargement
-    resultatDiv.innerText = '⏳ L\'IA réfléchit...';
+    resultatDiv.innerText = 'L\'IA réfléchit...';
     resultatDiv.className = 'loading';
     bouton.disabled = true;
 
