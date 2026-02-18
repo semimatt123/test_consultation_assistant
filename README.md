@@ -51,22 +51,37 @@ Vérifie l’installation :
 
 ```bash
 python --version
-2️⃣ Télécharger le projet
+```
+
+## 2️⃣ Télécharger le projet
+
+```bash
 git clone https://github.com/semimatt123/test_consultation_assistant.git
 cd test_consultation_assistant
+```
 (Si tu n’as pas Git, tu peux télécharger le projet en ZIP.)
 
-▶️ Lancer le programme
+---
+
+# ▶️ Lancer le programme
+
 Dans le dossier du projet :
 
+```bash
 python main.py
+```
 Puis suis les instructions dans le terminal.
 
-🧠 Exemple d’apprentissage
+---
+
+# 🧠 Exemple d’apprentissage
 Dans fonction_ia.py, tu trouveras par exemple une fonction comme :
 
+```bash
 def est_premier(nombre):
     ...
+```
+
 Cela te permet d’apprendre :
 
 comment créer une fonction
@@ -75,7 +90,9 @@ comment utiliser une boucle for
 
 comment retourner une valeur avec return
 
-🚀 Ce que tu peux améliorer
+---
+
+# 🚀 Ce que tu peux améliorer
 Quand tu seras plus à l’aise :
 
 Ajouter une gestion des erreurs (try / except)
@@ -88,11 +105,15 @@ Transformer le projet en API avec Flask ou FastAPI
 
 Ajouter un historique des calculs
 
-🎯 Pourquoi ce projet est utile pour débuter ?
+---
+
+# 🎯 Pourquoi ce projet est utile pour débuter ?
 ✅ Il est simple
 ✅ Il montre comment organiser un projet
 ✅ Il mélange Python et web
 ✅ Il permet de pratiquer la logique
 
-👨‍💻 Auteur
+---
+
+# 👨‍💻 Auteur
 Projet réalisé dans un objectif d’apprentissage.
