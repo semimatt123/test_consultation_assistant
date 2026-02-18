@@ -81,12 +81,6 @@ Voici quelques idées à ajouter :
 
 Toutes contributions sont les bienvenues !
 
-Fork le projet
-
-Crée une branche pour ta fonctionnalité ou correction (feat/ma-fonction, fix/bug)
-
-Ouvre une pull request
-
 📜 Licence
 
 Ce projet est open-source et libre d’utilisation (à préciser selon ta préférence).
