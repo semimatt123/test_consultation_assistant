@@ -43,7 +43,7 @@ img {
 </html>
 """
 
-#@app.get("/", response_class=HTMLResponse)
+@app.get("/", response_class=HTMLResponse)
 def read_root():
     return response
 
@@ -65,7 +65,7 @@ def nombre_ordi(nombre: int):
     return {"nombre": response3}
 
 @app.get("/ordi_premier2/{nombre}")
-def nombre_ordi(nombre: int):
+def nombre_ordi2(nombre: int):
     response4= ordi_premier2(nombre)
     return {"nombre": response4}
 

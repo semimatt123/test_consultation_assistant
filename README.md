@@ -29,14 +29,14 @@ C’est un projet d’apprentissage pour pratiquer :
 
 # 🗂 Structure du projet
 
-| Fichier | Rôle |
-|----------|------|
-| `main.py` | Programme principal |
-| `fonction_ia.py` | Contient les fonctions (ex : test nombre premier) |
-| `client.py` | Gère la communication entre les parties du programme |
-| `index.html` | Interface web simple |
-| `script.js` | Logique côté navigateur |
-| `styles.css` | Mise en page |
+| Fichier            | Rôle                                                 |
+|--------------------|------------------------------------------------------|
+| `main.py`          | Programme principal                                  |
+| `fonction_ia.py`   | Contient les fonctions (ex : test nombre premier)    |
+| `client.py`        | Gère la communication entre les parties du programme |
+| `index.html`       | Interface web simple                                 |
+| `script.js`        | Logique côté navigateur                              |
+| `styles.css`       | Mise en page                                         |
 
 ---
 
