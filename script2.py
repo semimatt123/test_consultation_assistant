@@ -18,7 +18,7 @@ def ordi_premier2(nombre):
     res=""
     nombre_identifie = nombre
     diviseur = 1
-    f = 0
+    f = True
     diviseur2 = 1
     clone_nombre_identifie = nombre_identifie
     while True:
@@ -29,7 +29,7 @@ def ordi_premier2(nombre):
             break
 
         if nombre_identifie % diviseur == 0:
-            f = 1
+            f = False
             while True:
                 diviseur2 += 1
                 while int(clone_nombre_identifie) % diviseur2 == 0:
@@ -47,9 +47,10 @@ def ordi_premier2(nombre):
 
             break
     print()
-    if f == 0:
+    if f:
         res += str(nombre_identifie) + " est premier."
     else:
         res += str(nombre_identifie) + " n'est pas premier."
     return res
+
 
